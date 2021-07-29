@@ -46,7 +46,7 @@ int main(int argc, char **argv)
         } else {
             char buffer[BUFFER_SIZE];
             memset(buffer, '\0', BUFFER_SIZE);
-            strcpy(buffer, "https://api.ikuuu.science/link/JNkSbs1RoXVGiCmU?sub=3&extend=1");
+            strcpy(buffer, "");
             //recv(connfd, buffer, BUFFER_SIZE - 1, 0);
             //printf("recv: %s\n", buffer);
             send(connfd, buffer, BUFFER_SIZE -1, 0);
