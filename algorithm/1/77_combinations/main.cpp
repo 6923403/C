@@ -18,7 +18,7 @@ public:
 
             return;
         }
-        for(int i = index; i <= n; i++) {
+        for(int i = index; i <= n - (k - path.size()) + 1; i++) { //(n - k + size) + 1
             path.push_back(i); // 处理节点 
             backtracking(n, k, i + 1); // 递归
             path.pop_back(); // 回溯，撤销处理的节点
